@@ -1,0 +1,92 @@
+header{
+    background: #BBBBBB;
+    padding: 20px 0; /*quando se tem somente duas posições a 1-topo e base, 2-direita e esquerda quer dizer que entre a margem e o conteudo tenha esses 20px*/
+}
+
+.caixa{
+    position: relative;
+    width: 940px; /*essa largura é um padrão web*/
+    margin: 0 auto; /*aqui ajustaremos a caixa centralizada na página idependente de seu tamanho na tela*/
+}
+
+nav{
+    position: absolute; /*aqui colocamos o elemento em qualquer posição que desejarmaos*/
+    top: 127.2px; /*aqui ele ficará ao topo da página*/
+    right: 0; /*e aqui ao extremo direiro*/
+    
+}
+
+nav li{
+    display: inline;
+    margin: 0 0 0 15px; /*as alterações de margem seguem a ordem 1-topo; 2-direita; 3-baixo; 4-esquerda*/
+}
+
+nav a{
+    text-transform: uppercase; /*texto em maiúscula*/
+    color: #000000;
+    font-weight: bold; /*peso da fonte - negrito*/
+    font-size: 22px;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: #C78C19;
+    text-decoration: dashed;
+}
+
+.produtos{
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.produtos li{
+    display: inline-block;
+    text-align: center;
+    width: 30%; /*damos maior e melhor distribuição dos elementos*/
+    vertical-align: top; /*fazemos os elementos se orientarem pela linha de cima*/
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box; /*coloca as medidas do padding proporcional ao width: 30%*/
+    border: 2px solid #000000; /*cria uma borda solida, com 2 pixels de largura, entre o padding e a margin */
+    border-radius: 10px; /*aqui é um arredondamento para todas as bordas, mas é possivél por para cada uma delas (10px 25px 40px 30px)*/
+}
+
+.produtos li:hover{ /*quando o cursor está por cima do elemento na página*/
+    border-color: #C78C19;
+}
+
+.produtos li:active{ /*quando cursor clica no elemento na página*/
+    border-color: #08BC19;
+}
+
+.produtos li:hover h2{ /*isso significa que afetará especificamente os titulos h2 de produtos*/
+    font-size: 34px;
+}
+
+.produtos h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.produto-descricao{
+    font-size: 18px;
+}
+
+.produtos-preco{
+    font-size: 22px;
+    font-weight: bold;
+    margin: 10px 0 0; /*isso que dizer que demos um espaçamento de 10px para cima e 0 para baixo e 0 para os lados isso é o mesmo que margin-top: 10px*/
+}
+
+footer{
+    text-align: center;
+    background: url("img_produtos/bg.jpg"); /*essa é uma forma de colocar uma imagem como plano de fundo*/
+    padding: 40px 0;
+}
+
+.copyright{
+    color: #FFFFFF;
+    font-size: 13px;
+    margin-top: 20px;
+}

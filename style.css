@@ -1,0 +1,117 @@
+/*
+Alfabeto = abcdef...
+
+Binário = 01
+
+Numérico = 0123456789
+
+Hexadecimal = 0123456789ABCDEF
+
+0 = ausência de cor
+
+F = máximo de cor
+
+RGB = Red Green Blue
+
+RGB = 0,1,2,3...,255
+
+(o RGB possui 255 níveis de representação, 0 = ausência de cor e 255 = máximo de cor, sua representação no CSS é rgb (r, g, b), para extrair a cor vermelha fica nessa formatação [red = rgb (255, 0, 0)])
+
+# = _ _ _ _ _ _
+
+(o red, green e blue ocupam 2 posições nessa exta ordem dentro do #
+para representar o vermelho basta por FF primeiro que são suas duas posições e que as outras quatro posições não existam, vão receber 0 [red = #FF0000])
+
+*/
+
+header{
+    background: #BBBBBB;
+    padding: 20px 0; /*quando se tem somente duas posições a 1-topo e base, 2-direita e esquerda quer dizer que entre a margem e o conteudo tenha esses 20px*/
+}
+
+.caixa{
+    position: relative;
+    width: 950px; /*essa largura é um padrão web*/
+    margin: 0 auto; /*aqui ajustaremos a caixa centralizada na página idependente de seu tamanho na tela*/
+}
+
+nav{
+    position: absolute; /*aqui colocamos o elemento em qualquer posição que desejarmaos*/
+    top: 127.2px; /*aqui ele ficará ao topo da página*/
+    right: 0; /*e aqui ao extremo direiro*/
+    
+}
+
+nav li{
+    display: inline;
+    margin: 0 0 0 15px; /*as alterações de margem seguem a ordem 1-topo; 2-direita; 3-baixo; 4-esquerda*/
+}
+
+nav a{
+    text-transform: uppercase; /*texto em maiúscula*/
+    color: #000000;
+    font-weight: bold; /*peso da fonte - negrito*/
+    font-size: 22px;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: #C78C19;
+    text-decoration: dashed;
+}
+
+#banner{
+    width: 100%;
+}
+
+.principal{
+    background-color: #CCCCCC;
+    padding: 30px;
+}
+
+
+h2, h3{
+
+    text-align: center;
+}
+
+
+em strong{ /*aqui ele fara a busca das tag 'em strong'*/
+    color: #FF0000;
+}
+
+#missao{
+    font: arial normal;
+}
+
+.itens{
+    font-style: italic;
+}
+
+.beneficios{
+    background: #FFFFFF;
+    padding: 20px;
+}
+
+.lista-beneficios{
+    display: inline-block; /*ele oculpa somente o tamanho do seu conteúdo, mas deixa manipular sua largura e espaçamentos*/
+    vertical-align: top;
+    width: 20%;
+    margin-right: 15%;
+}
+
+.imgbeneficios{
+    width: 50%;
+}
+
+footer{
+    text-align: center;
+    background: url("img_produtos/bg.jpg"); /*essa é uma forma de colocar uma imagem como plano de fundo*/
+    padding: 40px 0;
+}
+
+.copyright{
+    color: #FFFFFF;
+    font-size: 13px;
+    margin-top: 20px;
+}

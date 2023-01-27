@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contatos</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="contato.css">
+</head>
+<body>
+    <header> <!--Cabeçalho-->
+        <div class="caixa">
+            <h1><img src="img_produtos/logo.png" alt="Logo"></h1>
+        
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="contato.html">Contatos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <form> <!--tag para gerar formulário-->
+            <label for="nome">Nome e sobrenome</label> <!--taga que nomeia o input-->
+            <input type="text" id="nome" class="input-padrao" > <!--tag que contem aquilo que for digitado pelo usuário no modelo type text-->
+
+            <label for="email">Email</label>
+            <input type="text" id="email" class="input-padrao">
+
+            <label for="telefone">Telefone</label>
+            <input type="text" id="telefone" class="input-padrao">
+
+            <label for="mensagem">Mensagem</label>
+
+            <textarea name="" id="mensagem" cols="30" rows="10">
+            </textarea><!--tag que gera uma caixa digitável e manipulável em relação à sua espessura-->
+
+            <div>
+                <p>COmo prefere o nosso contato</p>
+
+                <!--esse input que contém aquilo que for marcado pelo usuário no modelo type radio (formato de bola)-->
+
+                <!--a propriedade name só pode ser preenchida uma vez, por isso que quando se seleciona um dos itens, eke desmarca o outro, matendo somente um selecionado-->
+
+                <label for="radio-emaio"><input type="radio" name="contato" value="email" id="radio-emaio"> Email</label>
+                
+    
+                <label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone"> Telefone</label>
+                
+    
+                <label for="radio-whatsapp"><input type="radio" name="contato" value="WhatsApp" id="radio-whatsapp"> WhatsApp</label>
+                
+            </div>
+
+            <!--input com type checkbox onde o usuário marcará uma opção na caixa-->
+            <label for=""><input type="checkbox">Gostaria de receber nossas noviddades por e-mail?</label>
+
+            <!--input type submi que gera um botão de envio com o nome contido no value-->
+            <input type="submit" value="Enviar Formulário">
+        </form>
+    </main>
+
+    <footer> <!--Rodapé-->
+        <img src="img_produtos/logo-branco.png" alt="">
+        <p class="copyright">&copy; Copyright Barbearia Alura - 2019</p>
+    </footer>
+</body>
+</html>

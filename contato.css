@@ -1,0 +1,70 @@
+header{
+    background: #BBBBBB;
+    padding: 20px 0; /*quando se tem somente duas posições a 1-topo e base, 2-direita e esquerda quer dizer que entre a margem e o conteudo tenha esses 20px*/
+}
+
+.caixa{
+    position: relative;
+    width: 940px; /*essa largura é um padrão web*/
+    margin: 0 auto; /*aqui ajustaremos a caixa centralizada na página idependente de seu tamanho na tela*/
+}
+
+nav{
+    position: absolute; /*aqui colocamos o elemento em qualquer posição que desejarmaos*/
+    top: 127.2px; /*aqui ele ficará ao topo da página*/
+    right: 0; /*e aqui ao extremo direiro*/
+    
+}
+
+nav li{
+    display: inline;
+    margin: 0 0 0 15px; /*as alterações de margem seguem a ordem 1-topo; 2-direita; 3-baixo; 4-esquerda*/
+}
+
+nav a{
+    text-transform: uppercase; /*texto em maiúscula*/
+    color: #000000;
+    font-weight: bold; /*peso da fonte - negrito*/
+    font-size: 22px;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: #C78C19;
+    text-decoration: dashed;
+}
+
+main{
+    width: 940px;
+    margin: 0 auto;
+}
+
+form{
+    margin: 40px 0;
+}
+
+form label, form p{
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px; /*aplica uma margem para baixo*/
+
+}
+
+.input-padrao{
+    display: block;
+    margin: 0 0 10px;
+    padding: 10px 25px;
+    width: 50%;
+}
+
+footer{
+    text-align: center;
+    background: url("img_produtos/bg.jpg"); /*essa é uma forma de colocar uma imagem como plano de fundo*/
+    padding: 40px 0;
+}
+
+.copyright{
+    color: #FFFFFF;
+    font-size: 13px;
+    margin-top: 20px;
+}
