@@ -57,6 +57,10 @@ form label, form p{
     width: 50%;
 }
 
+.checkbox{
+    margin: 20px 0;
+}
+
 footer{
     text-align: center;
     background: url("img_produtos/bg.jpg"); /*essa é uma forma de colocar uma imagem como plano de fundo*/
