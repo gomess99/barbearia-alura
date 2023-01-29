@@ -4,7 +4,7 @@ header{
 }
 
 .caixa{
-    position: relative;
+    position: relative; /*posiciona o elemento em relação a si mesmo. Ou seja, o ponto zero será o canto superior esquerdo, e ele começará a contar a partir dali*/
     width: 940px; /*essa largura é um padrão web*/
     margin: 0 auto; /*aqui ajustaremos a caixa centralizada na página idependente de seu tamanho na tela*/
 }
