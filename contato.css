@@ -90,3 +90,18 @@ footer{
     background: darkorange;
     transform: scale(1.2); /*aqui almentamos a escala/tamanhanho do nosso botão*/
 }
+
+table{
+    margin: 20px 0 40px; /*20px para cima e 40 para baixo*/
+}
+
+thead{
+    background: #555555;
+    color: white;
+    font-weight: bold;
+}
+
+td, th{
+    border: 1px solid #000000;
+    padding: 8px 15px; /*espaçamento para cima e para baixo de 8px e para os lados de 15px*/
+}
