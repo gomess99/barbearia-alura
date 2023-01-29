@@ -30,6 +30,8 @@
 
             <!--add o 'required' que torna esse campo obrigatório de preenchimento, sendo somente possível enviar o documento se os campos forem preenchidos-->
 
+            <!--add o 'placeholder' que adiciona um texto de como o ussuário deve digitar no campo, mas não é permanente -->
+
             <label for="email">Email</label>
             <input type="email" id="email" class="input-padrao" required placeholder="seuemail@dominio.com">
 
@@ -41,8 +43,9 @@
             <textarea name="" id="mensagem" cols="30" rows="10">
             </textarea><!--tag que gera uma caixa digitável e manipulável em relação à sua espessura-->
 
-            <div>
-                <p>Como prefere o nosso contato</p>
+            <fieldset> <!--usamos essa tag para deixa nosso site melhor escrito, agrupando os campos de prenchimento por títulos, nela não usamos parpagrafos 'p', mas sim títulos que são chamados de 'legend'. Pode ser usado para dados de ccartão de credito-->
+
+                <legend>Como prefere o nosso contato</legend>
 
                 <!--esse input que contém aquilo que for marcado pelo usuário no modelo type radio (formato de bola)-->
 
@@ -58,17 +61,17 @@
     
                 <label for="radio-whatsapp"><input type="radio" name="contato" value="WhatsApp" id="radio-whatsapp"> WhatsApp</label>
                 
-            </div>
+            </fieldset>
 
-            <div>
-                <p>Qual horário prefere ser atendido?</p>
+            <fieldset>
+                <legend>Qual horário prefere ser atendido?</legend>
                 <!--aqui criamos um leletor com aba em down-->
                 <select name="" id="">
                     <option value="">Manhã</option>
                     <option value="">Tarde</option>
                     <option value="">Noite</option>
                 </select>
-            </div>
+            </fieldset>
 
             <!--input com type checkbox onde o usuário marcará uma opção na caixa-->
             <label for=""><input type="checkbox" checked>Gostaria de receber nossas noviddades por e-mail?</label>
