@@ -72,3 +72,20 @@ footer{
     font-size: 13px;
     margin-top: 20px;
 }
+
+.enviar{
+    width: 40%;
+    padding: 15px 0;
+    background: orange;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    transition: 1s background; /*colocamos uma transição do background do hover*/
+    cursor: pointer; /*aqui alteramos o cursor de seta para a 'mão de click'*/
+}
+
+.enviar:hover{
+    background: darkorange;
+}
