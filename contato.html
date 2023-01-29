@@ -26,13 +26,15 @@
     <main>
         <form> <!--tag para gerar formulário-->
             <label for="nome">Nome e sobrenome</label> <!--taga que nomeia o input-->
-            <input type="text" id="nome" class="input-padrao" > <!--tag que contem aquilo que for digitado pelo usuário no modelo type text-->
+            <input type="text" id="nome" class="input-padrao" required> <!--tag que contem aquilo que for digitado pelo usuário no modelo type text-->
+
+            <!--add o 'required' que torna esse campo obrigatório de preenchimento, sendo somente possível enviar o documento se os campos forem preenchidos-->
 
             <label for="email">Email</label>
-            <input type="email" id="email" class="input-padrao">
+            <input type="email" id="email" class="input-padrao" required placeholder="seuemail@dominio.com">
 
             <label for="telefone">Telefone</label>
-            <input type="number" id="telefone" class="input-padrao">
+            <input type="number" id="telefone" class="input-padrao" required placeholder="(XX) XXXXX-XXXX">
 
             <label for="mensagem">Mensagem</label>
 
@@ -46,7 +48,9 @@
 
                 <!--a propriedade name só pode ser preenchida uma vez, por isso que quando se seleciona um dos itens, eke desmarca o outro, matendo somente um selecionado-->
 
-                <label for="radio-emaio"><input type="radio" name="contato" value="email" id="radio-emaio"> Email</label>
+                <!--o 'check' funciona para já deixar a opção marcada, mas é possível de ser alterado pelo usuário-->
+
+                <label for="radio-emaio"><input type="radio" name="contato" value="email" id="radio-emaio" checked> Email</label>
                 
     
                 <label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone"> Telefone</label>
@@ -67,7 +71,7 @@
             </div>
 
             <!--input com type checkbox onde o usuário marcará uma opção na caixa-->
-            <label for=""><input type="checkbox">Gostaria de receber nossas noviddades por e-mail?</label>
+            <label for=""><input type="checkbox" checked>Gostaria de receber nossas noviddades por e-mail?</label>
 
             <!--input type submi que gera um botão de envio com o nome contido no value-->
             <input type="submit" value="Enviar Formulário">
