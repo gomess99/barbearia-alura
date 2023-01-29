@@ -24,6 +24,9 @@ para representar o vermelho basta por FF primeiro que são suas duas posições 
 
 */
 
+body{
+	font-family: 'Montserrat', sans-serif; /*usamos a fonte que importamos do css via google fonts*/
+}
 
 header{
 	background: #BBBBBB;
