@@ -25,12 +25,12 @@ para representar o vermelho basta por FF primeiro que são suas duas posições 
 */
 
 
-header {
+header{
 	background: #BBBBBB;
 	padding: 20px 0; /*quando se tem somente duas posições a 1-topo e base, 2-direita e esquerda quer dizer que entre a margem e o conteudo tenha esses 20px*/
 }
 
-.caixa {
+.caixa{
 	position: relative;
 	width: 940px; /*essa largura é um padrão web*/
 	margin: 0 auto; /*aqui ajustaremos a caixa centralizada na página idependente de seu tamanho na tela*/
@@ -42,12 +42,12 @@ nav {
 	right: 0; /*e aqui ao extremo direiro*/
 }
 
-nav li {
+nav li{
 	display: inline;
 	margin: 0 0 0 15px; /*as alterações de margem seguem a ordem 1-topo; 2-direita; 3-baixo; 4-esquerda*/
 }
 
-nav a {
+nav a{
 	text-transform: uppercase; /*texto em maiúscula*/
 	color: #000000;
 	font-weight: bold; /*peso da fonte - negrito*/
@@ -55,7 +55,7 @@ nav a {
 	text-decoration: none;
 }
 
-nav a:hover {
+nav a:hover{
 	color: #C78C19;
 	text-decoration: underline;
 }
@@ -66,7 +66,7 @@ nav a:hover {
 	padding: 50px 0;
 }
 
-.produtos li {
+.produtos li{
 	display: inline-block; /*ele oculpa somente o tamanho do seu conteúdo, mas deixa manipular sua largura e espaçamentos*/
 	text-align: center;
 	width: 30%;
@@ -78,72 +78,72 @@ nav a:hover {
 	border-radius: 10px;
 }
 
-.produtos li:hover {
+.produtos li:hover{
 	border-color: #C78C19;
 }
 
-.produtos li:active {
+.produtos li:active{
 	border-color: #088C19;	
 }
 
-.produtos li:hover h2 {
+.produtos li:hover h2{
 	font-size: 34px;
 }
 
-.produtos h2 {
+.produtos h2{
 	font-size: 30px;
 	font-weight: bold;
 }
 
-.produto-descricao {
+.produto-descricao{
 	font-size: 18px;
 }
 
-.produto-preco {
+.produto-preco{
 	font-size: 22px;
 	font-weight: bold;
 	margin-top: 10px;
 }
 
-footer {
+footer{
 	text-align: center;
 	background: url("/img_produtos/bg.jpg"); /*essa é uma forma de colocar uma imagem como plano de fundo*/
 	padding: 40px 0;
 }
 
-.copyright {
+.copyright{
 	color: #FFFFFF;
 	font-size: 13px;
 	margin: 20px 0 0;
 }
 
-main {
+main{
 	width: 940px;
 	margin: 0 auto;
 }
 
-form {
+form{
 	margin: 40px 0;
 }
 
-form label, form legend {
+form label, form legend{
 	display:block;
 	font-size: 20px;
 	margin: 0 0 10px;
 }
 
-.input-padrao {
+.input-padrao{
 	display: block;
 	margin: 0 0 20px;
 	padding: 10px 25px;
 	width: 50%;
 }
 
-.checkbox {
+.checkbox{
 	margin: 20px 0;
 }
 
-.enviar {
+.enviar{
 	width:40%;
 	padding: 15px 0;
 	background: orange;
@@ -156,57 +156,57 @@ form label, form legend {
 	cursor: pointer;
 }
 
-.enviar:hover {
+.enviar:hover{
 	background: darkorange;
 	transform: scale(1.2);
 }
 
-table {
+table{
 	margin: 20px 0 40px;
 }
 
-thead {
+thead{
 	background: #555555;
 	color: white;
 	font-weight: bold;
 }
 
-td, th {
+td, th{
 	border: 1px solid #000000;
 	padding: 8px 15px;
 }
 
 
 /* css da página inicial */
-.banner {
+.banner{
 	width:100%;
 }
 
-.titulo-principal {
+.titulo-principal{
 	text-align: center;
 	font-size: 2em; /*em é a medida proporcional de px*/
 	margin: 0 0 1em;
 	clear: left; /*impede que o float atinja os demais elementos da página*/
 }
 
-.principal p {
+.principal p{
 	margin: 0 0 1em;
 }
 
-.principal strong {
+.principal strong{
 	font-weight: bold;
 }
 
-.principal em {
+.principal em{
 	font-style: italic;
 }
 
-.utensilios {
+.utensilios{
 	width: 120px;
 	float: left; /*servem para que o elemento se destaque na tela, deixe de ocupar o espaço em que estava, para que os outros elementos possam se posicionar ao redor dele/
 	margin: 0 20px 20px 0; /*margin 0 para cima 20 para direit, 20 para baixo e 0 para esquerda*/
 }
 
-.imgbeneficios {
+.imgbeneficios{
 	width: 60%;
 }
