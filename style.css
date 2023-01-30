@@ -22,6 +22,8 @@ RGB = 0,1,2,3...,255
 (o red, green e blue ocupam 2 posições nessa exta ordem dentro do #
 para representar o vermelho basta por FF primeiro que são suas duas posições e que as outras quatro posições não existam, vão receber 0 [red = #FF0000])
 
+Tabém existe o rgba que coloca uma opacidade nas cores, ficando assim (rgba(0, 0, 0, 0.3 - aqui que fica a opaciade))
+
 º Seletor >, para acessar os filhos de determinado elemento. Por exemplo, para acessar todos os p dentro de main:
 
 main > p {
@@ -259,6 +261,11 @@ td, th{
 
 .imgbeneficios{
 	width: 60%;
+    opacity: 1; /*dá uma opacidade no elemento, quanto menor menos visível*/
+}
+
+.imgbeneficios:hover{
+    opacity: 0.3; /*quando o mouse passar por cima da imagem ela ficará mais opaca*/
 }
 
 .beneficios{
