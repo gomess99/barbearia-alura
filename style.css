@@ -22,6 +22,28 @@ RGB = 0,1,2,3...,255
 (o red, green e blue ocupam 2 posições nessa exta ordem dentro do #
 para representar o vermelho basta por FF primeiro que são suas duas posições e que as outras quatro posições não existam, vão receber 0 [red = #FF0000])
 
+º Seletor >, para acessar os filhos de determinado elemento. Por exemplo, para acessar todos os p dentro de main:
+
+main > p {
+}
+
+
+º Seletor +, para acessar o primeiro irmão de determinado elemento. Por exemplo, para acessar o primeiro p após um img:
+
+img + p {
+}
+
+º Seletor ~, para acessar todos os irmãos de determinado elemento. Por exemplo, para acessar todos os p após um img:
+
+img ~ p {
+}
+
+º Seletor not, para acessar os elementos, exceto algum. Por exemplo, para acessar todos os p dentro de main, exceto o p que tem id missao:
+
+main p:not(#missao) {
+}
+
+
 */
 
 body{
@@ -229,6 +251,10 @@ td, th{
 
 .itens:nth-child(1){ /*aqui pegamos o primeiro elemento da lista de itens (que pode ser qulaquer outro número do seu total) e modificamos somente ele, usando essa propriedade, se usarmos nth-child(2n) significa que ele vai pegar todos os elementos pares da lista*/
     font-weight: bold;
+}
+
+.itens:before{ /*aqui fazemos adcionar qualquer coisa ANTES do elemento, tbm é possível add DEPOIS do elemento usando AFTER*/
+    content: '✯';
 }
 
 .imgbeneficios{
