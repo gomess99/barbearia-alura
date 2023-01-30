@@ -262,6 +262,7 @@ td, th{
 .imgbeneficios{
 	width: 60%;
     opacity: 1; /*dá uma opacidade no elemento, quanto menor menos visível*/
+    box-shadow: 10px 10px 10px #000000; /*aqui colocamos uma sobra no elemento, lemos assim: 10px para o eixo X e 10px para o eixo Y, 10px para o grau de espalhamento da sobra e por fim a cor */
 }
 
 .imgbeneficios:hover{
