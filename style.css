@@ -120,11 +120,6 @@ footer{
 	margin: 20px 0 0;
 }
 
-main{
-	width: 940px;
-	margin: 0 auto;
-}
-
 form{
 	margin: 40px 0;
 }
@@ -192,6 +187,13 @@ td, th{
 	clear: left; /*impede que o float atinja os demais elementos da página*/
 }
 
+.principal{
+    padding: 3em 0;
+    background: #fefefe;
+    width: 940px;
+	margin: 0 auto;
+}
+
 .principal p{
 	margin: 0 0 1em;
 }
@@ -210,9 +212,9 @@ td, th{
 	margin: 0 20px 20px 0; /*margin 0 para cima 20 para direit, 20 para baixo e 0 para esquerda*/
 }
 
-.conteudo-baneficios{
+.conteudo-beneficios{
     width: 640px;
-    margin: auto;
+    margin: 0 auto;
 }
 
 .lista-beneficios{
@@ -234,11 +236,18 @@ td, th{
 }
 
 .beneficios{
+    background: #888888;
     padding: 3em 0;
+}
+
+.mapa-conteudo{
+    width: 940px;
+	margin: 0 auto;
 }
 
 .mapa{
     padding: 3em 0;
+    background: linear-gradient(#FEFEFE, #888888); /*aqui conseguimos colocar um degrader linear, que tbm pode ser um radius (redondo), e també é possível colocar em graus ('ângulo'deg) */
 }
 
 .mapa p{
