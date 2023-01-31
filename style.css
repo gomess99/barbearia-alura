@@ -293,3 +293,21 @@ td, th{
     width: 560px;
     margin: 2em auto; /*1em para cima e para baixo e automatico para as laterais*/
 }
+
+@media screen and (max-width: 480px){ /*aqui fazemos uma busca para encontrar o tamanho da tela que o usuário está acessando e modificar/ajustar sua visualidade*/
+    .caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video{
+        width: auto; /*aqui a largura se adequará automaticamente*/
+    }
+
+    h1{
+        text-align: center;
+    }
+
+    nav{
+        position: static;
+    }
+
+    .lista-beneficios, .imgbeneficios{
+        width: 100%;
+    }
+}
