@@ -90,3 +90,32 @@ footer{
     font-size: 13px;
     margin-top: 20px;
 }
+
+@media screen and (max-width: 480px) {
+    .caixa{
+        width: auto;
+    }
+
+    h1{
+        text-align: center;
+    }
+
+    nav{
+        position: static;
+    }
+
+    .produtos{
+        width: auto;
+        padding: 10px;
+    }
+
+    .produtos li{
+        width: auto;
+        display: block;
+        margin: 20px 20px;
+    }
+
+    footer{
+        width: 100%;
+    }
+}

@@ -105,3 +105,44 @@ td, th{
     border: 1px solid #000000;
     padding: 8px 15px; /*espaçamento para cima e para baixo de 8px e para os lados de 15px*/
 }
+
+@media screen and (max-width: 480px) {
+    .caixa{
+        width: auto;
+    }
+
+    h1{
+        text-align: center;
+    }
+
+    nav{
+        position: static;
+    }
+
+    main{
+        width: 50%;
+        
+    }
+    
+    .input-padrao{
+        width: auto;
+        text-align: center;
+        padding: auto;
+        border: 0.5px solid;
+    }
+
+    textarea{
+        width: 214px;
+        border: 0.5px solid;
+    }
+
+    fieldset{
+        margin: 20px 0;
+    }
+
+    footer, .enviar{
+        width: auto;
+    }
+
+    
+}
